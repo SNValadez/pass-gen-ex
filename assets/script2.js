@@ -4,6 +4,11 @@ let lower = window.confirm("Do you want lowercase letters?")
 let special = window.confirm("Do you want special characters?")
 let length = parseInt(window.prompt("How long do you want the password to be?"))
 
+while (length < 8 || length > 128) {
+  length = parseInt(window.prompt("The password must be between 8 and 128."))
+}
+
+
 
 
 let library = ''
